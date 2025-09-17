@@ -106,7 +106,7 @@ function App() {
           </ul>
         </div>
 
-        {list.length > 0 && (
+        {list.length > 1 && (
           <div className="global-actions">
             <button onClick={updateAll} className="btn btn-secondary">
               Uppercase All
