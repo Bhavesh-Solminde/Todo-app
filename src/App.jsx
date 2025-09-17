@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import "./App.css";
@@ -7,14 +8,16 @@ function App() {
   const [list, setlist] = useState([]);
 
   function addTask() {
-    setlist([...list, { task: newTodo, id: uuidv4(), isDone: false }]);
-    setnewTodo("");
+    if (newTodo.trim() !== "") {
+      setlist([...list, { task: newTodo, id: uuidv4(), isDone: false }]);
+      setnewTodo("");
+    }
   }
   function updateTodoValue(event) {
     setnewTodo(event.target.value);
   }
   function deleteTodo(id) {
-    setlist((prevTodo) => prevTodo.filter((todo) => todo.id != id));
+    setlist((prevTodo) => prevTodo.filter((todo) => todo.id !== id));
   }
   function updateAll() {
     setlist((prevtodo) =>
