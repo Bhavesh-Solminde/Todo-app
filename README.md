@@ -114,6 +114,15 @@ function addTask() {
 - **Incremental Complexity** - Build features step by step
 - **Best Practices** - Modern React development standards
 
+## 🔧 Beginner-Friendly Setup
 
+This project uses Vite for an optimal learning experience:
+
+- **Fast Refresh** - See changes instantly
+- **Modern Tooling** - Latest development standards
+- **Simple Configuration** - Minimal setup required
+- **Clear Error Messages** - Helpful debugging information
+
+---
 
 **Perfect for learning React fundamentals through hands-on practice!** 🎓
